@@ -1,0 +1,27 @@
+" Display numbers
+set nu
+" Set 'tab width' to 4 space
+set ts=4
+set sw=4
+" And force tab to be spaces, instead of \t
+set noexpandtab
+" Also, make indenting a little easier
+set smartindent
+" Uses syntax coloring
+syntax on
+" Add mappings to hjkl (eases moving through files without moving the hand)
+map <C-k> <PageUp>
+map <C-j> <PageDown>
+map <C-h> :tabprevious<CR>
+map <C-l> :tabnext<CR>
+map <f5> :cp<CR>
+map <f6> :cn<CR>
+" Spell mappings
+map <C-f9> [s
+map <C-f10> ]s
+map <C-f11> zG
+set pastetoggle=<f12>
+" Enable reading .vimrc on the current directory
+set exrc
+" Maybe... Show spaces and tabs
+"set list lcs=trail:·,tab:»·
