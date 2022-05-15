@@ -24,5 +24,6 @@ map <C-f11> zG
 set pastetoggle=<f12>
 " Enable reading .vimrc on the current directory
 set exrc
-" Maybe... Show spaces and tabs
-"set list lcs=trail:·,tab:»·
+" Show tabs at the start and spaces at the start/end of lines
+set list lcs=trail:·,tab:»·
+hi SpecialKey ctermfg=darkblue guifg=darkblue
